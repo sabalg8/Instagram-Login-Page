@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/insta_logo"
+        />
+
+    <!-- Password input -->
+
+    <EditText
+        android:id="@+id/et_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="61dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Phone number, username, or email"
+        android:textColorHint="#B1A9A9"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Password"
+        android:textColorHint="#B1A9A9"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4DB5F9"
+        android:text="Log in"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="150dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="16dp"
+        android:background="#A9A0A0" />
+
+    <View
+        android:id="@+id/view_two"
+        android:layout_width="150dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="16dp"
+        android:background="#A9A0A0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="224dp"
+        android:text="OR" />
+
+
+    <TextView
+        android:id="@+id/login_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="188dp"
+        android:text="Log in with Facebook"
+        android:textColor="#7283A8" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="187dp"
+        android:layout_toLeftOf="@id/login_optional"
+        android:src="@drawable/facebook_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="159dp"
+        android:text="Forgot Password ?"
+        android:textColor="#00376B" />
+
+    <TextView
+        android:id="@+id/mainas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginBottom="127dp"
+        android:text="Made By Sabal Chaulagain"
+        android:textColor="#00376B" />
+
+
+</RelativeLayout>
